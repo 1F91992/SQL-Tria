@@ -38,3 +38,8 @@ FROM customers c
 LEFT JOIN orders o ON c.id = o.cust_id
 ORDER BY c.first_name
 	,o.order_details
+
+/*
+Mistake/error: Wrong join Used.
+solution: understand the question and revise all joins.
+*/
