@@ -35,3 +35,9 @@ FROM maxcte m
 INNER JOIN ms_employee_salary s ON m.id = s.id
 	AND m.sal = s.salary
 ORDER BY m.id
+
+
+/*
+Mistake/Error: result set contains duplicate records 
+Solution: use multi-test expression/condition to remove duplicate records.
+*/
