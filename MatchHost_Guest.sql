@@ -23,3 +23,12 @@ SELECT DISTINCT host_id
 FROM airbnb_hosts h
 INNER JOIN airbnb_guests g ON h.gender = g.gender
 	AND h.nationality = g.nationality
+
+/*
+Use distinct keyword
+otherwise
+result set will contain mulitple records for same host id 
+which isn't the case while pairing host with guest, assuming
+each host can be paried with only one distinct guest.
+
+*/
